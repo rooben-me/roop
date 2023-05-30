@@ -139,4 +139,4 @@ if __name__ == "__main__":
         start()
         quit()
     else:
-        iface.launch()
+        iface.launch(share=True)
