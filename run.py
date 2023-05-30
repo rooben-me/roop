@@ -122,8 +122,8 @@ def start(source_img, target_path, limit_fps=True, keep_frames=False):
 iface = gr.Interface(
     fn=start,
     inputs=[
-        gr.inputs.Image(type="filepath", label="Select a face"),
-        gr.inputs.Image(type="filepath", label="Select a target"),
+        gr.inputs.Image(label="Select a face"),
+        gr.inputs.Image(label="Select a target"),
         gr.inputs.Checkbox(label="Limit FPS to 30", default=True),
         gr.inputs.Checkbox(label="Keep frames dir", default=False),
     ],
